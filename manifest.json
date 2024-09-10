@@ -1,0 +1,43 @@
+{
+    "eula": "",
+    "vendor": "SAP",
+    "license": "",
+    "id": "com.sap.sac.tachomet",
+    "version": "1.0.3",
+    "name": "Tacometro2",
+    "newInstancePrefix": "Tacometro2",
+    "description": "Tacometro2 widget",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "ejemplo-tacometr",
+            "url": "/main.js",
+            "integrity": "sha256-CodigoSHA256",
+            "ignoreIntegrity": true
+        }
+       
+    ],
+    "properties": {
+        "min": {
+            "type": "number",
+            "default": 0
+        },
+        "max": {
+            "type": "number",
+            "default": 100
+        }
+    },
+    "methods": {},
+    "events": {},
+    "dataBindings": {
+        "dataBinding": {
+            "feeds": [
+                {
+                    "id": "measures",
+                    "description": "Measures",
+                    "type": "mainStructureMember"
+                }
+            ]
+        }
+    }
+}
